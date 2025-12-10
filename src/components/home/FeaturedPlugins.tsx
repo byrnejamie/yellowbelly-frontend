@@ -15,8 +15,16 @@ interface FeaturedPluginsProps {
 
 export default function FeaturedPlugins({ plugins }: FeaturedPluginsProps) {
   return (
-    <section className="bg-muted/50 py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-[#FAFAFA] py-24">
+      {/* Dot pattern background */}
+      <div
+        className="absolute inset-0 opacity-[0.4]"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #94a3b8 1px, transparent 1px)',
+          backgroundSize: '24px 24px',
+        }}
+      />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
             Featured Plugins
@@ -35,7 +43,7 @@ export default function FeaturedPlugins({ plugins }: FeaturedPluginsProps) {
                 <CardHeader>
                   <CardTitle>Coming Soon</CardTitle>
                   <CardDescription>
-                    We're putting the finishing touches on something useful. No bloat, we promise.
+                    We&apos;re putting the finishing touches on something useful. No bloat, we promise.
                   </CardDescription>
                 </CardHeader>
               </Card>

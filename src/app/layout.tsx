@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
+import { Outfit } from "next/font/google";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Header, Footer } from "@/components/layout";
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -18,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body className="min-h-screen bg-background antialiased">
+    <html lang="en" className={`${outfit.variable} ${GeistMono.variable}`}>
+      <body className="min-h-screen bg-background font-sans antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>
