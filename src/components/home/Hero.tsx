@@ -16,17 +16,17 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            WordPress Plugins That Just Work
+            Google Reviews on Your Site — In Every Language
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl">
-            Lightweight, reliable, and built to last. No bloat, no abandoned updates, no headaches.
+            Pull your Google Business reviews into WordPress and auto-translate them for every visitor. Social proof that works globally, styled your way.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button href="/plugins" size="lg">
-              Browse Plugins
+            <Button href="#pricing" size="lg">
+              Get LingoReview
             </Button>
-            <Button href="/about" variant="secondary" size="lg">
-              About Us
+            <Button href="#how-it-works" variant="secondary" size="lg">
+              See How It Works
             </Button>
           </div>
         </div>
