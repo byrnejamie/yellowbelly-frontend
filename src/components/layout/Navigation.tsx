@@ -25,7 +25,7 @@ export default function Navigation() {
               <Link
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-all",
+                  "text-base font-medium transition-all",
                   isActive
                     ? "text-[#F5C731]"
                     : "text-slate-500 hover:text-[#F5C731]"
