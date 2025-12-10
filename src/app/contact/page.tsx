@@ -3,7 +3,7 @@ import { Button } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with YellowBelly. We'd love to hear from you.",
+  description: "Questions about YellowBelly plugins? We reply within 24 hours.",
 };
 
 export default function ContactPage() {
@@ -12,10 +12,10 @@ export default function ContactPage() {
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-white">
-            Contact Us
+            Get in Touch
           </h1>
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-            Have a question or feedback? We&apos;d love to hear from you.
+            Questions, feedback, or just want to say hello? We read every message and reply within 24 hours.
           </p>
         </div>
 
@@ -99,14 +99,17 @@ export default function ContactPage() {
 
         <div className="mt-12 border-t border-zinc-200 pt-12 dark:border-zinc-800">
           <h2 className="text-lg font-semibold text-zinc-900 dark:text-white">
-            Other ways to reach us
+            Prefer email?
           </h2>
-          <dl className="mt-4 space-y-4 text-zinc-600 dark:text-zinc-400">
-            <div>
-              <dt className="font-medium text-zinc-900 dark:text-white">Email</dt>
-              <dd>support@yellowbelly.com</dd>
-            </div>
-          </dl>
+          <p className="mt-4 text-zinc-600 dark:text-zinc-400">
+            Reach us directly at{" "}
+            <a
+              href="mailto:support@yellowbelly.dev"
+              className="text-zinc-900 underline hover:no-underline dark:text-white"
+            >
+              support@yellowbelly.dev
+            </a>
+          </p>
         </div>
       </div>
     </div>

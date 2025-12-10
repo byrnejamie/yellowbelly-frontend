@@ -22,7 +22,7 @@ export default function FeaturedPlugins({ plugins }: FeaturedPluginsProps) {
             Featured Plugins
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Our most popular WordPress plugins
+            Focused tools that do one thing well—without slowing you down.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function FeaturedPlugins({ plugins }: FeaturedPluginsProps) {
                 <CardHeader>
                   <CardTitle>Coming Soon</CardTitle>
                   <CardDescription>
-                    Exciting plugins are on the way. Stay tuned!
+                    We're putting the finishing touches on something useful. No bloat, we promise.
                   </CardDescription>
                 </CardHeader>
               </Card>
